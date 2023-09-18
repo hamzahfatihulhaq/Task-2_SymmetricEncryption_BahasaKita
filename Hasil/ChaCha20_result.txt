@@ -1,0 +1,20 @@
+File: file1KB, Algorithm: ChaCha20
+Encryption Time: 5.3e-05 seconds
+Decryption Time: 1.9e-05 seconds
+---
+File: file1MB, Algorithm: ChaCha20
+Encryption Time: 0.005137 seconds
+Decryption Time: 0.005375 seconds
+---
+File: file10MB, Algorithm: ChaCha20
+Encryption Time: 0.047348 seconds
+Decryption Time: 0.046191 seconds
+---
+File: file50MB, Algorithm: ChaCha20
+Encryption Time: 0.212234 seconds
+Decryption Time: 0.225532 seconds
+---
+File: file100MB, Algorithm: ChaCha20
+Encryption Time: 0.433899 seconds
+Decryption Time: 0.479778 seconds
+---

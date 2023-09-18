@@ -1,0 +1,8 @@
+Melakukan pengujian performance Cryptography simetric dengan pengetestan menggunakan 5 file dengan ukuran:
+- 1kb
+- 1mb
+- 10mb
+- 50mb
+- 100mb
+
+Sampel kirim lewat api Upload file, ketika diupload maka didecrpyt ketika di download di encrypt

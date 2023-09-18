@@ -1,0 +1,20 @@
+File: file1KB, Algorithm: DES3
+Encryption Time: 0.00037 seconds
+Decryption Time: 0.000286 seconds
+---
+File: file1MB, Algorithm: DES3
+Encryption Time: 0.234223 seconds
+Decryption Time: 0.23347 seconds
+---
+File: file10MB, Algorithm: DES3
+Encryption Time: 2.373812 seconds
+Decryption Time: 2.401747 seconds
+---
+File: file50MB, Algorithm: DES3
+Encryption Time: 11.749081 seconds
+Decryption Time: 11.763758 seconds
+---
+File: file100MB, Algorithm: DES3
+Encryption Time: 23.90817 seconds
+Decryption Time: 24.236211 seconds
+---
