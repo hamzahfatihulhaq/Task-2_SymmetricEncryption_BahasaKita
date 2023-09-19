@@ -1,20 +1,4 @@
-File: file1KB, Algorithm: AES
-Encryption Time: 0.000981 seconds
-Decryption Time: 0.000229 seconds
----
-File: file1MB, Algorithm: AES
-Encryption Time: 0.003719 seconds
-Decryption Time: 0.004643 seconds
----
-File: file10MB, Algorithm: AES
-Encryption Time: 0.038042 seconds
-Decryption Time: 0.030537 seconds
----
-File: file50MB, Algorithm: AES
-Encryption Time: 0.173494 seconds
-Decryption Time: 0.147446 seconds
----
-File: file100MB, Algorithm: AES
-Encryption Time: 0.329402 seconds
-Decryption Time: 0.307211 seconds
+File: test.txt, Algorithm: AES
+Encryption Time: 0.001054 seconds
+Decryption Time: 0.000343 seconds
 ---

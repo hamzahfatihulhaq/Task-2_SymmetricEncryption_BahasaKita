@@ -7,31 +7,45 @@ from base64 import b64encode, b64decode
 
 sample_dir = 'Sampel'
 result_dir = 'Hasil'
-files = ['file1KB', 'file1MB', 'file10MB', 'file50MB', 'file100MB']
+# files = ['file1KB', 'file1MB', 'file10MB', 'file50MB', 'file100MB']
+files = ['test.txt']
 
 if not os.path.exists(result_dir):
     os.makedirs(result_dir)
 
-algorithms = ["AES", "ChaCha20", "DES3"]
+# algorithms = ["AES", "ChaCha20", "DES3"]
+algorithms = ["AES"]
 
 def AES_Algorithms(data):
     # Encrypt
-    key = get_random_bytes(16)
+    key = get_random_bytes(32)
 
     start_time = time.time()
 
     e_cipher = AES.new(key, AES.MODE_EAX)
+    print(type(key))
     cipher_nonce = e_cipher.nonce
     ciphertext, tag = e_cipher.encrypt_and_digest(data)
-
+    # print(ciphertext)
     encryption_time = time.time() - start_time
+
+    result_file = f'Test_result'
+
+    with open(os.path.join(result_dir, result_file), 'wb') as result_f:
+        result_f.write(ciphertext)
+
 
     # Decrypt
     start_time = time.time()
     d_cipher = AES.new(key, AES.MODE_EAX, cipher_nonce)
-    
+    print(key)
     # Verify and decrypt
-    d_data = d_cipher.decrypt(ciphertext)
+    with open(os.path.join(result_dir, result_file), 'rb') as f:
+        ciphertext1 = f.read()
+    
+    d_data = d_cipher.decrypt(ciphertext1)
+    # print(d_data)
+    
     try:
         d_cipher.verify(tag)
 
